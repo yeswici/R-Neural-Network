@@ -85,7 +85,7 @@ set.seed(12345)
 
 # The following code splits the dataset into a training set consisting of 
 # 70% of the data and a test set containing 30% of the data.
-ind <- sample(2, nrow(heart_dis), replace = TRUE, prob = c(0.7, 0.3))
+ind <- base::sample(2, nrow(heart_dis), replace = TRUE, prob = c(0.7, 0.3))
 train.data <- heart_dis[ind == 1, ]
 test.data <- heart_dis[ind == 2, ]
 
